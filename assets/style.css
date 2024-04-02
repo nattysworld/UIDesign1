@@ -7,12 +7,12 @@
 /* adjusting fonts */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+	font-family: AUTHENTIC sans,-apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background 500ms ease;
 }
 
 p, li {
-	font-size:  22px;
+	font-size:  16px;
 	line-height: 30px;
 }
 
@@ -24,6 +24,7 @@ p, li {
 
 h1, p {
 	margin-bottom:  20px;
+	font-size: 20px;
 }
 
 ul, ol {
@@ -36,9 +37,13 @@ img {
 }
 
 .cursive {
-	font-family: cursive;
+	font-family: sloop;
+	font-size: 50px;
 }
 
+h1, h2, h3, h4, h5, h6, h7 {
+	font-weight: normal;
+}
 
 /* uncomment the code below to set the grid */
 
