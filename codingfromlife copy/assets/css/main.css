@@ -1,0 +1,206 @@
+body {
+	background: #cccccc;
+}
+
+#align {
+	display: flex;
+  align-items: center;
+  justify-content: center;	
+  height: 100vh;
+}
+
+#stage {
+	width: 900px;
+	height: 556px;
+	position: relative;
+	margin: auto;
+	background: black;
+
+}
+
+#floor {
+  width: 606px;
+  height: 150px;
+  transform: skew(122deg);
+  background: #f3c077;
+  position: relative;
+  top: 314px;
+  left: 121px;
+}
+
+
+#diamond {
+	position: relative;
+  height: 355px;
+  width: 332px;
+  line-height: 200px;
+  text-align: center;
+  margin: 10px 40px;
+  background: yellow;
+  transform: rotate3d(10, 5, 4, 277deg);
+  top: -13px;
+  left: 117px;
+}
+
+#bookside {
+    width: 229px;
+    height: 37px;
+    transform: skewY(11.3deg);
+    background: white;
+    position: relative;
+    bottom: 41px;
+    left: 178px;
+
+}
+
+
+
+
+#layers {
+  width: 110px;
+  height: 132px;
+  transform: skewY(343.5deg);
+  background: red;
+  position: absolute;
+  top: 16.5px;
+  left: 90px;
+
+}
+
+#cakebody {
+  width: 199px;
+  height: 132px;
+  transform: skewY(347deg);
+  background: white;
+  position: relative;
+  top: 106px;
+  left: 94px;
+  
+}
+
+
+/*kirby*/
+
+#kirby {
+  width: 212px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  left: 550px;
+  bottom: 65px;
+}
+
+#armleft {
+  width: 61px;
+  height: 55px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  left: 528px;
+  bottom: 160px;
+}
+
+#armright {
+	width: 40px;
+	height: 40px;
+	background: white;
+	border-radius: 50%;
+	position: relative;
+	left: 640px;
+	bottom: 200px;
+}
+
+#leftleg {
+  width: 10;
+  height: 0;
+  /* border-left: 40px solid transparent; */
+  border-right: 76px solid transparent;
+  border-bottom: 90.5px solid red;
+  position: absolute;
+  transform: rotate(337deg);
+  top: 361.7px;
+  left: 571.2px;
+  border-radius: 40%;
+
+}
+
+/*
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 150px solid yellow;
+	position: absolute;
+	top: 203px;
+	left: 60px;
+}
+*/
+
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+  
+
+#parallelogram {
+	width: 90px;
+  height: 132px;
+  transform: skewY(20deg);
+  background: blue;
+  position: absolute;
+  top: 16.5px;
+  left: 0px;
+}
+
+/*
+#circle:hover { 
+	border-radius: 0px;
+	background: orange;
+	transform: rotate(90);
+
+
+}*/
+
+#clip {
+	width: 150px;
+	height: 150px;
+	background: green;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	top: 203px;
+	left: 690px;
+	position: absolute;
+
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+}
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+
+*/
