@@ -1,15 +1,15 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000; /* Set background color to black */
+    color: #ffffff; /* Set text color to white for contrast */
 }
 
 header {
     text-align: center;
     padding: 1em 0;
-    border-bottom: 1px solid #000;
+/*    border-bottom: 1px solid #000;*/
 }
 
 main {
@@ -21,6 +21,12 @@ main {
     display: block;
     margin: 0 auto;
     max-width: 40%;
+    height: auto;
+}
+
+.emoji-inline {
+    margin: -5px auto;
+    max-width: 5%;
     height: auto;
 }
 
