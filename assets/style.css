@@ -4,6 +4,15 @@
 	box-sizing: border-box;
 }
 
+
+@font-face {
+    font-family: 'PP Editorial New';
+    src: url('ppeditorialnew-ultralightitalic-bf644b214ff1e9b-webfont.woff2') format('woff2'), /* Modern Browsers */
+         url('ppeditorialnew-ultralightitalic-bf644b214ff1e9b-webfont.woff') format('woff');   /* Older Browsers */
+    /* Optionally, you can specify font-weight and font-style */
+    font-weight: normal;
+    font-style: normal;
+}
 /* adjusting fonts */
 
 body {
@@ -12,7 +21,7 @@ body {
 }
 
 p, li {
-	font-size:  16px;
+	font-size:  17px;
 	line-height: 30px;
 }
 
@@ -22,9 +31,21 @@ p, li {
 	padding: 20px;
 }
 
-h1, p {
+h1 {
 	margin-bottom:  20px;
-	font-size: 20px;
+	font-size: 26px;
+	
+}
+
+
+h3 {
+	margin-bottom:  20px;
+	font-size: 23px;
+	
+}
+
+p{
+	font-size: 17px;
 }
 
 ul, ol {
@@ -43,6 +64,8 @@ img {
 
 h1, h2, h3, h4, h5, h6, h7 {
 	font-weight: normal;
+	font-family: PP Editorial New, AUTHENTIC sans, sans-serif;
+
 }
 
 /* uncomment the code below to set the grid */
