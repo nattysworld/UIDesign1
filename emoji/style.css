@@ -1,13 +1,27 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Self Modern Regular', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Set background color to black */
-    color: #ffffff; /* Set text color to white for contrast */
+    background-color: #ffffff; /* Set background color to black */
+    color: #000000; /* Set text color to white for contrast */
 }
 
+
+
+
+@font-face {
+    font-family: 'Self Modern Regular';
+    src: url('self_modern_regular-webfont.woff2') format('woff2'), /* Modern Browsers */
+         url('self_modern_regular-webfont.woff') format('woff');   /* Older Browsers */
+    /* Optionally, you can specify font-weight and font-style */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 header {
-    text-align: center;
+    text-align: left;
+    margin-left: 50px;
     padding: 1em 0;
 /*    border-bottom: 1px solid #000;*/
 }
@@ -17,21 +31,31 @@ main {
     line-height: 1.6;
 }
 
-.emoji-image {
+
+.image{
     display: block;
-    margin: 0 auto;
     max-width: 40%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.emoji-image {
+   /* display: block;
+    margin: 0 auto;*/
+    max-width: 20%;
     height: auto;
 }
 
 .emoji-inline {
     margin: -5px auto;
-    max-width: 5%;
+    max-width: 4%;
     height: auto;
 }
 
 section {
     margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 h2 {
@@ -39,7 +63,15 @@ h2 {
     margin-bottom: 10px;
 }
 
-.example {
-    background-color: #f0f0f0;
+   .example {
+    margin-bottom: 10px;
+}
+
+.example-content {
+    display: inline-block;
+    background-color: #000000; /* Set background color to black */
+    color: #ffffff; /* Set text color to white */
     padding: 10px;
-    border-lef
+    border-left: 5px solid #fff; /* Adjust border color to white for contrast */
+    border-radius: 20px; /* Set border radius to 20px */
+}
