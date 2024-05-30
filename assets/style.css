@@ -68,6 +68,37 @@ h1, h2, h3, h4, h5, h6, h7 {
 
 }
 
+
+#darkmode{
+	position: absolute; 
+	top: 10px; 
+	right: 10px; 
+	padding: 4px 8px; 
+	font-size: 12px; 
+	border-radius: 5px; 
+	background: lightgray;"
+	font-family: PP Editorial New, AUTHENTIC sans, sans-serif;
+
+}
+
+
+/* dark mode here*/
+
+
+body.dark {
+	background: black;
+	background-image: url();
+	color: white;
+}
+
+li.dark {
+	color: white;
+}
+
+
+
+
+
 /* uncomment the code below to set the grid */
 
 /*#grid {
