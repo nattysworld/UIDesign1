@@ -1,4 +1,59 @@
-body {
+@font-face {
+    font-family: 'PP Editorial New';
+    src: url('assets/ppeditorialnew-ultralightitalic-bf644b214ff1e9b-webfont.woff2') format('woff2'), /* Modern Browsers */
+         url('assets/ppeditorialnew-ultralightitalic-bf644b214ff1e9b-webfont.woff') format('woff');   /* Older Browsers */
+  }
+  
+  /* General styles */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
     background-color: white; /* Set the background color to white */
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center contents vertically */
+    height: 100vh; /* Take full viewport height */
+    background-color: white; /* Set the background color to white */
+  }
+  
+  /* Title styles */
+  .title {
+    font-family: 'PP Editorial New', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px; /* Remove margin-top to better center the title */
+    margin-bottom: 20px; /* Add space below the title */
+  }
+  
+  /* Button styles */
+  .start-btn, .upload-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Styles specific to "Add a Memory" page */
+  #canvas {
+    display: block;
+    width: 100%; /* Ensure canvas fits within the container */
+    height: 70vh; /* Ensure canvas fits within the container */
+  }
+  
+  .upload-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
   }
   
