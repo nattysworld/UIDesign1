@@ -332,8 +332,6 @@
 
 // animate();
 
-
-
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { ImprovedNoise } from 'three/examples/jsm/math/ImprovedNoise';
@@ -342,6 +340,7 @@ let texture; // Declare texture variable
 
 // Initialize scene, camera, and renderer
 const scene = new THREE.Scene();
+console.log('hi');
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -412,34 +411,34 @@ scene.add(light);
 // Add OrbitControls for user interaction
 const controls = new OrbitControls(camera, renderer.domElement);
 
-// Function to handle image upload
+
+
 function handleImageUpload(event) {
-  console.log('File selected:', event.target.files[0]); // Check if file is selected
+  console.log('Image uploaded!'); // Add this line for debugging
   const file = event.target.files[0]; // Get the uploaded file
   if (file) {
     const reader = new FileReader();
     reader.onload = function (event) {
-      console.log('Image loaded:', event.target.result); // Log when image is loaded
+      console.log('Data URL of uploaded image:', event.target.result); // Log the data URL
       texture = new THREE.TextureLoader().load(event.target.result); // Load the uploaded image as a texture
-      if (texture) {
-        console.log('Texture loaded successfully.'); // Log when texture is loaded
-        mesh.material.map = texture; // Apply the texture to the material
-        mesh.material.needsUpdate = true; // Ensure the material gets updated
-      } else {
-        console.error('Failed to load texture.'); // Log an error if texture loading fails
-      }
+      mesh.material.map = texture; // Apply the texture to the material
+      mesh.material.needsUpdate = true; // Ensure the material gets updated
     };
     reader.readAsDataURL(file); // Read the uploaded file as data URL
-  } else {
-    console.error('No file selected.'); // Log an error if no file is selected
   }
 }
+
+
 
 // Create input element for image upload
 const input = document.createElement('input');
 input.type = 'file';
 input.accept = 'image/*'; // Accept any image format
 input.addEventListener('change', handleImageUpload);
+
+// Add the input element to the DOM
+document.body.appendChild(input);
+console.log('File input element added to the DOM:', input);
 
 // Function to resize renderer and camera aspect ratio on window resize
 function onWindowResize() {
@@ -458,3 +457,29 @@ const animate = function () {
 };
 
 animate();
+
+
+
+
+// // Function to handle image upload
+// function handleImageUpload(event) {
+//   console.log('File selected:', event.target.files[0]); // Check if file is selected
+//   const file = event.target.files[0]; // Get the uploaded file
+//   if (file) {
+//     const reader = new FileReader();
+//     reader.onload = function (event) {
+//       console.log('Image loaded:', event.target.result); // Log when image is loaded
+//       texture = new THREE.TextureLoader().load(event.target.result); // Load the uploaded image as a texture
+//       if (texture) {
+//         console.log('Texture loaded successfully.'); // Log when texture is loaded
+//         mesh.material.map = texture; // Apply the texture to the material
+//         mesh.material.needsUpdate = true; // Ensure the material gets updated
+//       } else {
+//         console.error('Failed to load texture.'); // Log an error if texture loading fails
+//       }
+//     };
+//     reader.readAsDataURL(file); // Read the uploaded file as data URL
+//   } else {
+//     console.error('No file selected.'); // Log an error if no file is selected
+//   }
+// }
