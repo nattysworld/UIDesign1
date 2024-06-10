@@ -58,7 +58,7 @@ mesh.receiveShadow = true; // Enable receiving shadows
 scene.add(mesh);
 
 // Scale the geometry to make it bigger
-mesh.scale.set(0.60, 1.20, 0.60); // Adjust the scale factors slightly
+mesh.scale.set(0.75, 1.45, 0.75); // Adjust the scale factors slightly
 
 // Add ambient light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Soft ambient light
@@ -101,33 +101,6 @@ function handleImageUpload(event) {
 
 // Event listener for file input change
 document.getElementById('imageUpload').addEventListener('change', handleImageUpload);
-
-
-
-// // Function to handle text input
-// function handleTextInput() {
-//   const text = document.getElementById('textInput').value;
-
-//   // Create a canvas and context to render the text
-//   const canvas = document.createElement('canvas');
-//   const context = canvas.getContext('2d');
-//   canvas.width = 512; // Adjust the canvas size as needed
-//   canvas.height = 512;
-//   context.fillStyle = '#FFFFFF'; // White background
-//   context.fillRect(0, 0, canvas.width, canvas.height);
-//   context.font = '16px Arial'; // Adjust font size and style as needed
-//   context.fillStyle = '#000000'; // Black text color
-//   context.textAlign = 'center';
-//   context.fillText(text, canvas.width / 2, canvas.height / 2);
-
-//   // Create texture from the canvas
-//   const texture = new THREE.CanvasTexture(canvas);
-
-//   // Apply the texture to the material
-//   mesh.material.map = texture;
-//   mesh.material.needsUpdate = true;
-// }
-
 
 
 // Function to handle text input and apply it as texture overlay
@@ -178,4 +151,31 @@ const animate = function () {
 };
 
 animate();
+
+
+
+
+// // Function to handle text input
+// function handleTextInput() {
+//   const text = document.getElementById('textInput').value;
+
+//   // Create a canvas and context to render the text
+//   const canvas = document.createElement('canvas');
+//   const context = canvas.getContext('2d');
+//   canvas.width = 512; // Adjust the canvas size as needed
+//   canvas.height = 512;
+//   context.fillStyle = '#FFFFFF'; // White background
+//   context.fillRect(0, 0, canvas.width, canvas.height);
+//   context.font = '16px Arial'; // Adjust font size and style as needed
+//   context.fillStyle = '#000000'; // Black text color
+//   context.textAlign = 'center';
+//   context.fillText(text, canvas.width / 2, canvas.height / 2);
+
+//   // Create texture from the canvas
+//   const texture = new THREE.CanvasTexture(canvas);
+
+//   // Apply the texture to the material
+//   mesh.material.map = texture;
+//   mesh.material.needsUpdate = true;
+// }
 
