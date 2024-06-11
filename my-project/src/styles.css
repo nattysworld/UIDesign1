@@ -3,11 +3,18 @@
     src: url('assets/ppeditorialnew-ultralightitalic-bf644b214ff1e9b-webfont.woff2') format('woff2'), /* Modern Browsers */
          url('assets/ppeditorialnew-ultralightitalic-bf644b214ff1e9b-webfont.woff') format('woff');   /* Older Browsers */
   }
+
+  @font-face {
+    font-family: 'Arial Narrow';
+    src: url('assets/arial-narrow.woff2') format('woff2'), /* Modern Browsers */
+  }
+
+  
   
   /* General styles */
   body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial Narrow', sans-serif;
     background-color: white; /* Set the background color to white */
     text-align: center;
   }
@@ -36,7 +43,7 @@
 .nav-menu a {
     text-decoration: none;
     color: #333;
-    font-size: 15px;
+    font-size: 17px;
     padding: 5px 10px;
 }
 
