@@ -1,10 +1,7 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { ImprovedNoise } from 'three/examples/jsm/math/ImprovedNoise';
 
-// // import * as THREE from './three.module.js';
-// import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/controls/OrbitControls.js';
-// import { ImprovedNoise } from 'https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/math/ImprovedNoise.js';
+import * as THREE from './src/three.module.js';
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/controls/OrbitControls.js';
+import { ImprovedNoise } from 'https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/math/ImprovedNoise.js';
 
 
 // Initialize scene, camera, and renderer
