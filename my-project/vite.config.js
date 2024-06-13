@@ -12,13 +12,12 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: 'src',
-  publicDir: '../public',
   build: {
-    outDir: '../dist',
-    emptyOutDir: true,
+    outDir: 'dist', // Output directory for build files
   },
-  server: {
-    open: true, // Automatically open the browser on server start
-  },
+  resolve: {
+    alias: {
+      'three': 'node_modules/three/build/three.module.js',
+    }
+  }
 });
-
