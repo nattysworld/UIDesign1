@@ -1,5 +1,6 @@
 
-import * as THREE from '../node_modules/three/build/three.module.js';
+// import * as THREE from '../node_modules/three/build/three.module.js';
+import * as THREE from 'three';
 import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
 import { ImprovedNoise } from '../node_modules/three/examples/jsm/math/ImprovedNoise.js';
 // import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/controls/OrbitControls.js';
