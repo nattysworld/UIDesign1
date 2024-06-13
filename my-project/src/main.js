@@ -2,7 +2,8 @@
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 // import { ImprovedNoise } from 'three/examples/jsm/math/ImprovedNoise';
 
-// import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.142.0/build/three.module.js';
+import * as THREE from './three.module.js';
+
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/controls/OrbitControls.js';
 import { ImprovedNoise } from 'https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/math/ImprovedNoise.js';
 
