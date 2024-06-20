@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'PP Editorial New Italic';
+    src: url('ppeditorialnew-ultralightitalic-bf644b214ff1e9b-webfont.woff2') format('woff2'), /* Modern Browsers */
+         url('ppeditorialnew-ultralightitalic-bf644b214ff1e9b-webfont.woff') format('woff');   /* Older Browsers */
+    /* Optionally, you can specify font-weight and font-style */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'PP Editorial New Ultralight';
+    src: url('ppeditorialnew-ultralight-bf644b21500d0c0-webfont.woff2') format('woff2')
+         url('ppeditorialnew-ultralight-bf644b21500d0c0-webfont.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  body{
+    padding: 20px;
+  }
+
+  @font-face {
+    font-family: 'Arial Narrow';
+    src: url('assets/arial-narrow.woff2') format('woff2'), /* Modern Browsers */
+  }
+
+ /* Title styles */
+  .title {
+    font-family: 'PP Editorial New Italic', sans-serif;
+    font-size: 36px;
+    margin-top: 10px; /* Remove margin-top to better center the title */
+    margin-bottom: 5px; /* Add space below the title */
+  }
+  
+  .subtitle {
+    font-family: 'PP Editorial New Ultralight', sans-serif;
+    font-size: 20px;
+  }
+
+  .image-container {
+    width: 300px;
+    height:auto;
+  }

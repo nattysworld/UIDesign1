@@ -18,6 +18,7 @@
 body {
 	font-family: AUTHENTIC sans,-apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background 500ms ease;
+	background-color: white;
 }
 
 p, li {
@@ -96,6 +97,38 @@ li.dark {
 }
 
 
+
+
+.container {
+    width: 40%;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 3%;
+}
+
+@media (max-width: 988px) {
+    .container {
+        background-color: lightblue;
+        border-radius: 10%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+a, a:visited {
+	transition: all 500ms ease;
+	color:blue;
+}
+
+a:hover {
+	color:red;
+}
 
 
 
