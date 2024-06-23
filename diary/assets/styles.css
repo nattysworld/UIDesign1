@@ -2,42 +2,111 @@
     font-family: 'PP Editorial New Italic';
     src: url('ppeditorialnew-ultralightitalic-bf644b214ff1e9b-webfont.woff2') format('woff2'), /* Modern Browsers */
          url('ppeditorialnew-ultralightitalic-bf644b214ff1e9b-webfont.woff') format('woff');   /* Older Browsers */
-    /* Optionally, you can specify font-weight and font-style */
-    font-weight: normal;
-    font-style: normal;
-  }
-
-@font-face {
-    font-family: 'PP Editorial New Ultralight';
-    src: url('ppeditorialnew-ultralight-bf644b21500d0c0-webfont.woff2') format('woff2')
-         url('ppeditorialnew-ultralight-bf644b21500d0c0-webfont.woff')format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-  body{
+@font-face {
+    font-family: 'PP Editorial New Ultralight';
+    src: url('ppeditorialnew-ultralight-bf644b21500d0c0-webfont.woff2') format('woff2'),
+         url('ppeditorialnew-ultralight-bf644b21500d0c0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
     padding: 20px;
-  }
+    margin-right: 60px;
+    margin-left: 60px;
+}
 
-  @font-face {
+@font-face {
     font-family: 'Arial Narrow';
-    src: url('assets/arial-narrow.woff2') format('woff2'), /* Modern Browsers */
-  }
+    src: url('assets/arial-narrow.woff2') format('woff2'); /* Modern Browsers */
+}
 
- /* Title styles */
-  .title {
+/* Title styles */
+.title {
     font-family: 'PP Editorial New Italic', sans-serif;
     font-size: 36px;
     margin-top: 10px; /* Remove margin-top to better center the title */
-    margin-bottom: 5px; /* Add space below the title */
-  }
-  
-  .subtitle {
+    margin-bottom: 50px; /* Add more space below the title */
+}
+
+.subtitle {
     font-family: 'PP Editorial New Ultralight', sans-serif;
     font-size: 20px;
-  }
+}
 
-  .image-container {
-    width: 300px;
-    height:auto;
-  }
+.flyer-container {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the flyer image */
+}
+
+.flyer-container img {
+  text-align: center;
+    max-width: 80%; /* Resize the flyer image */
+    height: auto;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center; /* Center the two images */
+    margin-right: 20px; /* Space between images and event details */
+}
+
+.image-container {
+    width: 400px;
+    height: auto;
+    margin-right: 10px; /* Space between the two images */
+}
+
+.image-container:last-child {
+    margin-right: 0; /* Remove margin from the last image */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.event-details {
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.additional-images-container {
+    display: flex;
+    justify-content: center; /* Center the additional images */
+    margin-top: 20px;
+}
+
+.additional-image {
+    width: 300px; /* Adjust the width as needed */
+    margin-right: 20px; /* Space between additional images */
+}
+
+.additional-image:last-child {
+    margin-right: 0; /* Remove margin from the last additional image */
+}
+
+.additional-image img {
+    max-width: 100%;
+    height: auto;
+}
